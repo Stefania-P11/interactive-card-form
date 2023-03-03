@@ -20,7 +20,9 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
+html {
+    font-size:62.5%;
+}
 body {
     margin:0;
     background-image: url("./images/bg-main-mobile.png");
@@ -29,6 +31,7 @@ body {
     text-transform: uppercase;
     font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
     font-weight: 500;
+    
 }
 
 input { 
@@ -48,7 +51,7 @@ button {
     border-style: none;
     background:hsl(278, 68%, 11%);
     color:white;
-    font-size:18px;
+    font-size:1.8rem;
 }
 
 
@@ -65,7 +68,7 @@ header {
    height:280px;
    position:relative;
    color: hsl(270, 3%, 87%);
-   font-size:12px;
+   font-size:1.2rem;
    
 }
 
@@ -115,7 +118,7 @@ header * {
 .frontSide div + span {
     top:90px;
     left:35px;
-    font-size:22px;
+    font-size:2.2rem;
 }
 
 .frontSide div + span + span {
@@ -159,7 +162,7 @@ main {
 
     background:white;
     padding:20% 10%;
-    font-size:12px;
+    font-size:1.2rem;
     color:hsl(278, 68%, 11%);
     clear:both;
 
@@ -175,7 +178,7 @@ main section div {
     justify-content: space-between;
 }
 input {
-    font-size:18px;
+    font-size:1.8rem;
 }
 
 .expiration{
@@ -194,7 +197,7 @@ input {
 footer {
 
     margin-top:50px;
-    font-size:14px;
+    font-size:1.4rem;
     height:10px;
     text-transform: capitalize;
 }
