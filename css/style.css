@@ -88,7 +88,7 @@ header * {
 
 .frontSide {
 
-    background-image: url("/images/bg-card-front.png");
+    background-image: url("./images/bg-card-front.png");
     background-repeat: no-repeat;
     background-size:contain;
     height: 200px;
