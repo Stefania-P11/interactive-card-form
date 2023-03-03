@@ -8,40 +8,47 @@
   
   <title>Frontend Mentor | Interactive card details form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  <header>
+    <div class="background"></div>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+    <section class="backSide">
+      <span>000</span>
+    </section>
 
-  000
+    <section class="frontSide">
+      <span>0000 0000 0000 0000</span>
+      <span>Jane Appleseed</span>
+      <span>00/00</span>
+    </section>
+  </header>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+  <main>
+    <section>
+      <h1>Cardholder Name</h1>
+      <input type="text" required placeholder="e.g. Jane Appleseed">
+    </section>
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+    <section>
+      <h1>Card Number</h1>
+      <input type="number" required placeholder="e.g 1234 5678 9123 0000">
+    </section>
 
-  Exp. Date (MM/YY)
-  MM
-  YY
+    <section>
+      <h1>Exp. Date (MM/YY)</h1>
+      <h1>cvc</h1>
+      <input type="number" placeholder="MM" required>
+      <input type="number" placeholder="YY" required>
+      <input type="number" placeholder="e.g. 123" required>
+    </section>
 
-  CVC
-  e.g. 123
+    <button>Confirm</button>
 
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
