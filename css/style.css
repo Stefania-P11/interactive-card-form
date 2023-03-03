@@ -23,7 +23,7 @@
 
 body {
     margin:0;
-    background-image: url("images/bg-main-mobile.png");
+    background-image: url("./images/bg-main-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
     text-transform: uppercase;
@@ -65,7 +65,7 @@ header * {
 
 .backSide {
 
-    background-image: url("images/bg-card-back.png");
+    background-image: url("./images/bg-card-back.png");
     background-size:contain;
     background-repeat: no-repeat;
     height: 200px;
@@ -89,7 +89,7 @@ header * {
 
 .frontSide {
 
-    background-image: url("images/bg-card-front.png");
+    background-image: url("./images/bg-card-front.png");
     background-repeat: no-repeat;
     background-size:contain;
     height: 200px;
