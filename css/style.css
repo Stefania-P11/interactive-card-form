@@ -27,6 +27,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     text-transform: uppercase;
+    font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+    font-weight:500;
 }
 
 /******************************************
