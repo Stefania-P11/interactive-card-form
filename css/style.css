@@ -30,7 +30,7 @@ input[type=number]::-webkit-outer-spin-button {
 /*******************************************/
 
 html {
-    font-size:62.5%;
+    font-size:10px;
 }
 
 body {
@@ -41,6 +41,7 @@ body {
     text-transform: uppercase;
     font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
     font-weight: 500;
+    font-size:1.8rem;
     
 }
 
@@ -79,12 +80,12 @@ header {
    position:relative;
    color: hsl(270, 3%, 87%);
    font-size:1.2rem;
-   
+   margin-left:2%;
 }
 
 header * {
     position: absolute;
-}
+} 
 
 /* CARD BACK IMAGE */
 
@@ -94,10 +95,12 @@ header * {
     background-size:contain;
     background-repeat: no-repeat;
     height:200px;
-    width:75%;
+    width:270px;
     border-radius:8px;
     top:50px;
-    left:90px;
+    left:80px;
+    position:absolute;
+  
     
 }
 
@@ -105,8 +108,11 @@ header * {
 .backSide span {
 
     position:absolute;
-    top: 68px;
-    left:225px;
+    top: 67px;
+    left:200px;
+    right:50px;
+    
+
     
 }
 
@@ -118,30 +124,32 @@ header * {
     background-repeat: no-repeat;
     background-size:contain;
     height: 200px;
-    width:80%;
+    width:270px;
     border-radius:8px;
     float:right;
     top:170px;
     left:5%;
 }
 
-.frontSide div + span {
+.cardNumber {
     top:90px;
-    left:35px;
+    left:20px;
     font-size:2rem;
+    width:100%;
+    
 }
 
-.frontSide div + span + span {
+.frontSide div + span {
 
-    top:130px;
-    left:35px;
+    top:125px;
+    left:20px;
 
 }
 
-.frontSide span + span + span {
+.frontSide span + span {
    
-    top:130px;
-    left:240px;
+    top:125px;
+    left:220px;
 }
 
 /* CARD FRONT DETAILS */
@@ -208,11 +216,14 @@ input {
 footer {
 
     margin-top:50px;
-    font-size:1.4rem;
     height:10px;
     text-transform: capitalize;
 }
 
+.attribution {
+
+    margin-top:5%;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
