@@ -65,7 +65,7 @@ header * {
 
 .backSide {
 
-    background-image: url("../images/bg-card-back.png");
+    background-image: url("./images/bg-card-back.png");
     background-size:contain;
     background-repeat: no-repeat;
     height: 200px;
