@@ -51,6 +51,7 @@ button {
     font-size:18px;
 }
 
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -192,7 +193,12 @@ input {
 
 footer {
 
+    margin-top:50px;
+    font-size:14px;
+    height:10px;
+    text-transform: capitalize;
 }
+
 
 /******************************************
 /* ADDITIONAL STYLES
