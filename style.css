@@ -40,6 +40,17 @@ input {
     
 }
 
+button {
+    height:50px;
+    width:100%;
+    margin-top:5%;
+    border-radius:10px;
+    border-style: none;
+    background:hsl(278, 68%, 11%);
+    color:white;
+    font-size:18px;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -68,20 +79,20 @@ header * {
     background-image: url("./images/bg-card-back.png");
     background-size:contain;
     background-repeat: no-repeat;
-    height: 200px;
-    width:347px;
+    height:200px;
+    width:75%;
     border-radius:8px;
     top:50px;
-    left:35%;
+    left:90px;
     
 }
 
 
 .backSide span {
 
-    position:fixed;
-    padding-left:280px;
-    padding-top:85px;
+    position:absolute;
+    top: 68px;
+    left:225px;
     
 }
 
@@ -93,7 +104,7 @@ header * {
     background-repeat: no-repeat;
     background-size:contain;
     height: 200px;
-    width:347px;
+    width:80%;
     border-radius:8px;
     float:right;
     top:170px;
@@ -101,31 +112,31 @@ header * {
 }
 
 .frontSide div + span {
-    top:100px;
+    top:90px;
     left:35px;
     font-size:22px;
 }
 
 .frontSide div + span + span {
 
-    top:150px;
+    top:130px;
     left:35px;
 
 }
 
 .frontSide span + span + span {
    
-    top:150px;
-    left:280px;
+    top:130px;
+    left:240px;
 }
 
 /* CARD FRONT DETAILS */
 
 .filledBadge {
 
-    height:38px;
-    width:38px;
-    border-radius: 50%;
+    height:35px;
+    width:35px;
+    border-radius:50%;
     background-color: white;
     top:25px;
     left:25px;
