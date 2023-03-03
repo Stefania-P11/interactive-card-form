@@ -37,9 +37,14 @@ body {
 header {
    height:280px;
    position:relative;
+   color: hsl(270, 3%, 87%);
+   font-size:12px;
    
 }
 
+header * {
+    position: absolute;
+}
 
 .backSide {
 
@@ -49,8 +54,6 @@ header {
     height: 200px;
     width:347px;
     border-radius:8px;
-    /* margin:8% 3% 10% 30%; */
-    position:absolute; 
     top:50px;
     left:35%;
     
@@ -61,7 +64,7 @@ header {
     position:fixed;
     padding-left:280px;
     padding-top:85px;
-    color:white;
+    
 }
 
 .frontSide {
@@ -73,44 +76,37 @@ header {
     width:347px;
     border-radius:8px;
     float:right;
-    position:absolute;
     top:170px;
     left:5%;
-    color:white;
-   
-
 }
 
 .frontSide div + span {
-    position:absolute;
-    top:110px;
+    top:100px;
     left:35px;
-    font-size:24px;
+    font-size:22px;
 }
 
 .frontSide div + span + span {
-    position:absolute;
+
     top:150px;
     left:35px;
-    font-size:12px;
-    color:hsl(270, 3%, 87%);
+
 }
 
 .frontSide span + span + span {
-    position:absolute;
+   
     top:150px;
     left:280px;
-    font-size:12px;
-    color:hsl(270, 3%, 87%);
 }
 .filledBadge {
+
     height:38px;
     width:38px;
     border-radius: 50%;
     background-color: white;
-    position:absolute;
     top:25px;
     left:25px;
+
 }
 
 .outlineBadge {
@@ -118,7 +114,6 @@ header {
     width:18px;
     border-radius: 50%;
     border:1.5px solid white;
-    position:absolute;
     top:35px;
     left:75px;
 }
