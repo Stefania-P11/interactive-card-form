@@ -94,8 +94,8 @@ header * {
     background-image: url("../images/bg-card-back.png");
     background-size:contain;
     background-repeat: no-repeat;
-    height:200px;
-    width:270px;
+    height:140px;
+    width:255px;
     border-radius:8px;
     top:50px;
     left:80px;
@@ -123,16 +123,18 @@ header * {
     background-image: url("../images/bg-card-front.png");
     background-repeat: no-repeat;
     background-size:contain;
-    height: 200px;
-    width:270px;
+    height: 140px;
+    width:255px;
     border-radius:8px;
     float:right;
     top:170px;
     left:5%;
+    color:hsl(270, 3%, 87%);
+  
 }
 
 .cardNumber {
-    top:90px;
+    top:85px;
     left:20px;
     font-size:2rem;
     width:100%;
@@ -141,15 +143,15 @@ header * {
 
 .frontSide div + span {
 
-    top:125px;
+    top:120px;
     left:20px;
 
 }
 
 .frontSide span + span {
    
-    top:125px;
-    left:220px;
+    top:120px;
+    left:210px;
 }
 
 /* CARD FRONT DETAILS */
@@ -228,3 +230,65 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media (min-width:600px){
+
+    body{
+        display:flex;
+        flex-direction:row;
+        background-image:url('../images/bg-main-desktop.png');
+        background-size: contain;
+    }
+
+    header{
+        width:30vw;
+ 
+    }
+
+
+    .frontSide {
+
+        top:20vh;
+        left:15vw;
+        scale: 1.2;
+        box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.1);
+     
+  
+    }
+
+    .backSide {
+        
+        top:48vh;
+        left:20vw;
+        scale:1.2;
+        box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    main {
+        width:70vw;
+        padding:10%;
+        height:100vh;
+        padding-top: 25vh;
+        padding-left:25vw;
+    
+    }
+
+    main section,
+    button {
+        scale:.9; 
+        margin-bottom:0px;
+        margin-top:2vh;
+    }
+
+    button {
+
+        height:10vh;
+
+    }
+
+    footer {
+
+        margin-top:25vh;
+    }
+
+}
