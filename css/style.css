@@ -230,8 +230,21 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+@media screen and (max-width: 374){
+    body {
+        scale:0.2;
+    }
 
-@media (min-width:600px){
+    main {
+        scale:0.2;
+        width:100vw;
+    }
+
+  
+
+   
+}
+@media (min-width:1024px){
 
     body{
         display:flex;
@@ -282,7 +295,7 @@ footer {
 
     button {
 
-        height:10vh;
+        height:8vh;
 
     }
 
@@ -292,3 +305,38 @@ footer {
     }
 
 }
+
+@media (min-width: 2159px) {
+
+   .frontSide,
+   .backSide {
+
+    scale:3;
+
+   }
+
+   button {
+
+    height: 5vh;
+    border-radius: 20px;
+    margin-left:0;
+    margin-right:20vw;
+    font-size: 5rem;
+    
+   }
+
+   main section{
+
+    scale:2.5;
+    margin:2vh;
+    padding:2vh 0 2vh 2vh;
+    margin-right:10vw;
+   }
+
+   footer {
+    margin:auto;
+    scale:2;
+    margin-top:30vh;
+   }
+}
+
