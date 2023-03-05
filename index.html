@@ -37,24 +37,28 @@
    
 
   <main>
+
     <section>
-      <label>Cardholder Name<input type="text" required placeholder="e.g. Jane Appleseed"></label>
+      <label>Cardholder Name
+        <input type="text" id="name" placeholder="e.g Jane Appleseed"/>
+      </label>
     </section>
 
     <section>
-      <label>Card Number<input type="number" required placeholder="e.g 1234 5678 9123 0000"></label>
+      <label>Card Number<input id="number" type="number" required placeholder="e.g 1234 5678 9123 0000"></label>
     </section>
 
     <section>
       <span class="clearfix">Exp. Date (MM/YY)</span>
       <div>
-        <input class="expiration" type="number" placeholder="MM" required>
-        <input class ="expiration" type="number" placeholder="YY" required>
+        <input class="expiration month" type="number" placeholder="MM" required>
+        <input class ="expiration year" type="number" placeholder="YY" required>
         <input class ="cvc" type="number" placeholder="e.g. 123" required>
       </div>
     </section>
 
-    <button>Confirm</button>
+  <input class="button submitInfo" type="submit" value="Confirm">
+  </main>
 
   <footer>
     <div class="attribution">
@@ -62,5 +66,8 @@
       Coded by <a href="https://www.linkedin.com/in/stefania-piciorea/">Stefania Piciorea</a>.
     </div>
   </footer>
+
+
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
