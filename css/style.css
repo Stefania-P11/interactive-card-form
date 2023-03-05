@@ -42,7 +42,7 @@ body {
     font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size:1.8rem;
-    
+   
 }
 
 input { 
@@ -188,6 +188,7 @@ main {
     font-size:1.2rem;
     color:hsl(278, 68%, 11%);
     clear:both;
+   
 
 }
 
@@ -200,7 +201,9 @@ main section div {
     display:flex;
     justify-content: space-between;
 }
+
 input {
+
     font-size:1.5rem;
     padding:2%;
 }
@@ -219,21 +222,24 @@ input {
 }
 
 footer {
-
-    margin-top:50px;
-    height:10px;
+     display:block;
+    height:20px;
     text-transform: capitalize;
+    background-color: white;
 }
+
 
 .attribution {
-
-    margin-top:5%;
+    width:100%;
+ 
 }
+
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 @media screen and (max-width: 374){
+   
     body {
         scale:0.2;
     }
@@ -243,23 +249,29 @@ footer {
         width:100vw;
     }
 
-  
 
-   
 }
+
 @media (min-width:1024px){
 
-    body{
+    body { 
         display:flex;
         flex-direction:row;
         background-image:url('../images/bg-main-desktop.png');
         background-size: contain;
+      
     }
 
     header{
         width:30vw;
  
     }
+
+    footer {
+
+        display:none;
+    }
+
 
 
     .frontSide {
@@ -282,7 +294,7 @@ footer {
 
     main {
         width:70vw;
-        padding:10%;
+        padding:15%;
         height:100vh;
         padding-top: 25vh;
         padding-left:25vw;
@@ -302,10 +314,7 @@ footer {
 
     }
 
-    footer {
-
-        margin-top:25vh;
-    }
+   
 
 }
 
@@ -318,28 +327,34 @@ footer {
 
    }
 
-   button {
+   .button {
 
-    height: 5vh;
+    scale:1.56;
     border-radius: 20px;
-    margin-left:0;
-    margin-right:20vw;
-    font-size: 5rem;
-    
+    font-size: 4rem;
+    padding:5%;
+    margin:auto;
+    margin-right:5%;
+    margin-top:10%;
+    height:4.5vh;
+    text-align: center;
+  
    }
+
 
    main section{
 
-    scale:2.5;
+    scale:3;
     margin:2vh;
     padding:2vh 0 2vh 2vh;
     margin-right:10vw;
    }
 
    footer {
-    margin:auto;
-    scale:2;
-    margin-top:30vh;
+    display:none;
    }
 }
 
+/************* TIP *************/
+
+/* home.html #element-id */
