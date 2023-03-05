@@ -1,0 +1,26 @@
+
+
+html {
+    font-size: 10px;
+}
+
+main section{
+   text-align: center
+}
+
+main span {
+    text-transform: capitalize;
+    color:hsl(279, 6%, 55%);
+    font-size: 1.8rem;
+}
+
+main div {
+    background-image: url(../images/icon-complete.svg);
+    height:9vh;
+    width:9vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin:auto;
+    margin-bottom: 8%;
+}
+
