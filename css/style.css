@@ -202,6 +202,16 @@ main section div {
     justify-content: space-between;
 }
 
+main section span {
+
+    display:inline-block;
+    
+}
+
+main section span + span {
+    margin-left:40%;
+}
+
 input {
 
     font-size:1.5rem;
