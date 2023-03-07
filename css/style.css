@@ -133,6 +133,7 @@ header * {
     top:170px;
     left:5%;
     color:hsl(270, 3%, 87%);
+ 
   
 }
 
@@ -151,11 +152,17 @@ header * {
 
 }
 
-.frontSide span + span {
-   
+.frontSide span + span  {
     top:120px;
     left:210px;
+ 
+    
 }
+
+#expirationContainer {
+    display: inline-block;
+}
+
 
 /* CARD FRONT DETAILS */
 
