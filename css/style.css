@@ -97,11 +97,11 @@ header * {
     background-image: url("../images/bg-card-back.png");
     background-size:contain;
     background-repeat: no-repeat;
-    height:140px;
-    width:255px;
+    height:168px;
+    width:305px;
     border-radius:8px;
     top:50px;
-    left:80px;
+    left:150px;
     position:absolute;
   
     
@@ -111,8 +111,8 @@ header * {
 .backSide span {
 
     position:absolute;
-    top: 67px;
-    left:200px;
+    top: 76px;
+    left:235px;
     right:50px;
     
 
@@ -126,20 +126,21 @@ header * {
     background-image: url("../images/bg-card-front.png");
     background-repeat: no-repeat;
     background-size:contain;
-    height: 140px;
-    width:255px;
+    height: 168px;
+    width:305px;
     border-radius:8px;
     float:right;
     top:170px;
     left:5%;
     color:hsl(270, 3%, 87%);
+    
  
   
 }
 
 .cardNumber {
     top:85px;
-    left:20px;
+    left:30px;
     font-size:2rem;
     width:100%;
     
@@ -148,13 +149,13 @@ header * {
 .frontSide div + span {
 
     top:120px;
-    left:20px;
+    left:30px;
 
 }
 
 .frontSide span + span  {
     top:120px;
-    left:210px;
+    left:230px;
  
     
 }

@@ -1,33 +1,25 @@
-
-// document.querySelector('.submitInfo').addEventListener('click', getInfo)
-
-
-
-// function getInfo() {
-
-//     const fullName = document.querySelector('#name').value 
-//     const cardNumber = document.querySelector('#number').value 
-//     const expirationMonth = document.querySelector('.month').value
-//     const expirationYear = document.querySelector('.year').value 
-//     const cvcNumber = document.querySelector('.cvc').value 
-//     //document.querySelector('#userNumber').innerText += cardNumber
-//     console.log(`${fullName}, ${cardNumber}, ${expirationMonth}, ${expirationYear}, ${cvcNumber}`)
-//     window.location.href = "../completedState.html"
-    
-// }
+let cardNumber = document.querySelector("#inputNumber")
+const fullName = document.querySelector("#inputName")
+const monthValue = document.querySelector('#inputMonth')
+const yearValue = document.querySelector('#inputYear')
+const inputCvc = document.querySelector("#inputCvcCode")
+const expirationDate = document.querySelectorAll(".expiration")
+const expirationDateOnCard = document.querySelector("#expPlaceholder")
+const nameOnCard = document.querySelector('#namePlaceholder')
+const numberOnCard = document.querySelector('#numberPlaceholder')
+const cvcOnCard = document.querySelector('#cvcPlaceholder')
 
 //Takes the information from the Card Number field and passes it to the span
 //corresponding to the card number on the front of the card image
 
+    cardNumber.onkeyup = function() {
+        if (cardNumber.value !== ""){
+            numberOnCard.innerHTML = cardNumber.value
+        } else {
+            numberOnCard.innerHTML = "0000 0000 0000 0000"
+        }
+    }
 
-
-
-document.querySelector("#number").addEventListener('input', function(){ 
-    let inputValue = document.querySelector('#number').value;
-    if(inputValue !== ''){
-        getInfo(inputValue, "#numberPlaceholder"); 
-    } 
-});
 
 
 // //Takes the information from the Cardholder Name field and passes it to the span 
@@ -35,48 +27,41 @@ document.querySelector("#number").addEventListener('input', function(){
 
 
 
-document.querySelector("#name").addEventListener('input', function(){ 
-    let inputValue = document.querySelector('#name').value;
-    if(inputValue !== ''){
-        getInfo(inputValue, "#namePlaceholder")
-    } 
-})
-
-
+    fullName.onkeyup = function () {
+        if (fullName.value !== "" ){
+            nameOnCard.innerHTML = fullName.value
+        } else {
+            nameOnCard.innerHTML = "Jane Appleseed"
+        }
+    }
 
 
 // //Takes the information from the month and year input fields and places it
 // //in the span corresponding to the expiration date on the front of the card image
 
-let elements = document.querySelectorAll(".expiration");
 
-elements.forEach(function(element){
-    element.addEventListener('input', function(){ 
-        let monthValue = document.querySelector('#month').value
-        let yearValue = document.querySelector('#year').value
-        
-        if(monthValue !== '' && yearValue !== ''){
-            getExpiration(monthValue, yearValue)
-        }
-    });
-});
-
-function getExpiration(monthValue, yearValue) {
-    document.querySelector("#expPlaceholder").innerText = monthValue + "/" + yearValue;
-}
-
+    expirationDate.forEach (function (element) {
+        element.addEventListener ('keyup', function () {
+            if (monthValue.value !== "" && yearValue.value !== ""){
+                expirationDateOnCard.innerHTML = ` ${monthValue.value}/${yearValue.value}` 
+            } else {
+                expirationDateOnCard.innerHTML = "00/00"
+            }
+        })
+    })
 
 // Takes the information entered in the cvc field and displays it in the span
 // corresponding to the cvc code on the back of the card.
 
-document.querySelector("#cvcCode").addEventListener('input', function(){ 
-    let inputValue = document.querySelector('#cvcCode').value
-    if(inputValue !== ''){
-        getInfo(inputValue, "#cvcPlaceholder")
-    } 
-});
+
+    inputCvc.onkeyup = function () {
+        if (inputCvc.value !== ""){
+            cvcOnCard.innerHTML = inputCvc.value
+        } else {
+            cvcOnCard.innerHTML = "000"
+        }
+    }
 
 
-function getInfo(inputData, ID) {
-    document.querySelector(ID).innerText = inputData;
-}
+
+  
