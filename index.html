@@ -44,19 +44,23 @@
         <input type="text" id="inputName" placeholder="e.g Jane Appleseed"/>
       </label>
     </section>
-
+    <p class="error" id="name-error">Can't be blank</p>
     <section>
       <label>Card Number<input id="inputNumber" type="text" required placeholder="e.g 1234 5678 9123 0000"></label>
     </section>
-
+    <p class="error" id="number-error">Can't be blank</p>
     <section>
       <span class="clearfix">Exp. Date (MM/YY)</span>
+     
       <span class="clearfix">CVC</span>
       <div>
         <input class="expiration" id="inputMonth" type="number" placeholder="MM" required>
         <input class ="expiration" id="inputYear" type="number" placeholder="YY" required>
         <input class ="cvc" id="inputCvcCode" type="number" placeholder="e.g. 123" required>
+       
       </div>
+      <p class="error" id="date-error">Can't be blank</p>
+      <p class="error" id="cvc-error">Can't be blank</p>
     </section>
 
   <input class="button submitInfo" type="submit" value="Confirm">
