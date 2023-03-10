@@ -221,14 +221,13 @@ main section span + span {
 }
 
 input {
-
     font-size:1.5rem;
     padding:2%;
 }
 
 .expiration{
 
-    flex-basis:20%;
+    flex-basis:25%;
     text-align: center;
 
 }
@@ -237,10 +236,19 @@ input {
 .cvc  {
     flex-basis:45%;
     text-align: center;
+   
 }
 
+.dateInput, 
+.cvcInputField {
+
+    display:flex;
+    flex-direction: column;
+}
+
+
 footer {
-     display:block;
+    display:block;
     height:20px;
     text-transform: capitalize;
     background-color: white;
