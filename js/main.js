@@ -8,7 +8,11 @@ const expirationDateOnCard = document.querySelector("#expPlaceholder")
 const nameOnCard = document.querySelector('#namePlaceholder')
 const numberOnCard = document.querySelector('#numberPlaceholder')
 const cvcOnCard = document.querySelector('#cvcPlaceholder')
-
+const confirmButton = document.querySelector('.submitInfo')
+const nameError = document.querySelector('#name-error')
+const numberError = document.querySelector('#number-error')
+const dateError = document.querySelector('#date-error')
+const cvcError = document.querySelector('#cvc-error')
 //Takes the information from the Card Number field and passes it to the span
 //corresponding to the card number on the front of the card image
 
@@ -63,10 +67,8 @@ const cvcOnCard = document.querySelector('#cvcPlaceholder')
     }
 
 
+//Opens the Completed State page once the Confirm Button is clicked
 
-<<<<<<< Updated upstream
-  
-=======
 
 //Displays errors fielda are left blank
 
@@ -98,8 +100,8 @@ confirmButton.addEventListener("click", () => {
         /\d{2}/gi.test(yearValue.value) == false
     ) {
         dateError.style.display="block";
-        monthValue.style.border = "2px solid rgba(255, 0, 0, 0.3)";
-        yearValue.style.border = "2px solid rgba(255, 0, 0, 0.3)";
+        monthValue.style.border = "2px solid rgba(0, 0, 0.3)";
+        yearValue.style.border = "2px solid rgba(0, 0, 0.3)";
     } else {
         dateError.style.display = "none";
         monthValue.style.border = "2px solid rgba(238, 130, 238)";
@@ -108,11 +110,11 @@ confirmButton.addEventListener("click", () => {
 
     if (/\d{3}/gi.test(inputCvc) == false) {
         cvcError.style.display = "block";
-        inputCvc.style.border = "2px solid rgba(255, 0, 0, 0.3)";
+        inputCvc.style.border = "2px solid rgba(0, 0, 0.3)";
     } else {
         cvcError.syle.display = "none";
         inputCvc.style.border = "2px solid rgba(238, 130, 238)";
     }
 
 })
->>>>>>> Stashed changes
+
