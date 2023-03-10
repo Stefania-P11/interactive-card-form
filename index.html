@@ -48,6 +48,7 @@
     <section>
       <label>Card Number<input id="inputNumber" type="text" required placeholder="e.g 1234 5678 9123 0000"></label>
     </section>
+<<<<<<< Updated upstream
 
     <section>
       <span class="clearfix">Exp. Date (MM/YY)</span>
@@ -56,6 +57,26 @@
         <input class="expiration" id="inputMonth" type="number" placeholder="MM" required>
         <input class ="expiration" id="inputYear" type="number" placeholder="YY" required>
         <input class ="cvc" id="inputCvcCode" type="number" placeholder="e.g. 123" required>
+=======
+    <p class="error" id="number-error">Can't be blank</p>
+
+    <section>
+      <div>
+        <div class="dateInput">
+          <span>Exp. Date (MM/YY)</span>
+          <p class="error" id="month-year-error">Can't be blank</p>
+          <div>
+            <input class="expiration" id="inputMonth" type="number" placeholder="MM" required>
+            <input class ="expiration" id="inputYear" type="number" placeholder="YY" required>
+          </div>
+         </div>
+
+          <div class="cvcInputField">
+            <span class="clearfix">CVC</span>
+            <input class ="cvc" id="inputCvcCode" type="number" placeholder="e.g. 123" required>
+            <p class="error" id="cvc-error">Can't be blank</p>
+          </div>
+>>>>>>> Stashed changes
       </div>
     </section>
 

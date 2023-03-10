@@ -64,4 +64,55 @@ const cvcOnCard = document.querySelector('#cvcPlaceholder')
 
 
 
+<<<<<<< Updated upstream
   
+=======
+
+//Displays errors fielda are left blank
+
+confirmButton.addEventListener("click", () => {
+
+    //validates name input
+
+    if (/\S+/gi.test(fullName.value) == false) {
+      nameError.style.display = "block";
+      fullName.style.border = "2px solid rgba(255, 0, 0, 0.3)";
+    } else {
+      nameError.style.display = "none";
+      cardName.style.border = "2px solid rgba(238,130,238)";
+    }
+
+    //validates number input (limits digits to 16)
+
+    if (/\d{16}/gi.test(cardNumber.value) == false) {
+        numberError.style.display = "block";
+        cardNumber.style.border = "2px solid rgba(255, 0, 0, 0.3)";
+    } else {
+        numberError.style.display = "none";
+        cardNumber.style.border = "2px solid rgba(238,130,238)";
+    }
+
+    //validates month and year input (limits digits to 2 for each field)
+    if (
+        /\d{2}/gi.test(monthValue.value) == false ||
+        /\d{2}/gi.test(yearValue.value) == false
+    ) {
+        dateError.style.display="block";
+        monthValue.style.border = "2px solid rgba(255, 0, 0, 0.3)";
+        yearValue.style.border = "2px solid rgba(255, 0, 0, 0.3)";
+    } else {
+        dateError.style.display = "none";
+        monthValue.style.border = "2px solid rgba(238, 130, 238)";
+        yearValue.style.border = "2px solid rgba(238, 130, 238)";
+    }
+
+    if (/\d{3}/gi.test(inputCvc) == false) {
+        cvcError.style.display = "block";
+        inputCvc.style.border = "2px solid rgba(255, 0, 0, 0.3)";
+    } else {
+        cvcError.syle.display = "none";
+        inputCvc.style.border = "2px solid rgba(238, 130, 238)";
+    }
+
+})
+>>>>>>> Stashed changes
