@@ -100,8 +100,8 @@ confirmButton.addEventListener("click", () => {
         /\d{2}/gi.test(yearValue.value) == false
     ) {
         dateError.style.display="block";
-        monthValue.style.border = "2px solid rgba(0, 0, 0.3)";
-        yearValue.style.border = "2px solid rgba(0, 0, 0.3)";
+        monthValue.style.border = "2px solid rgba(255, 0, 0, 0.3)";
+        yearValue.style.border = "2px solid rgba(255, 0, 0, 0.3)";
     } else {
         dateError.style.display = "none";
         monthValue.style.border = "2px solid rgba(238, 130, 238)";
@@ -110,7 +110,7 @@ confirmButton.addEventListener("click", () => {
 
     if (/\d{3}/gi.test(inputCvc) == false) {
         cvcError.style.display = "block";
-        inputCvc.style.border = "2px solid rgba(0, 0, 0.3)";
+        inputCvc.style.border = "2px solid rgba(255, 0, 0, 0.3)";
     } else {
         cvcError.syle.display = "none";
         inputCvc.style.border = "2px solid rgba(238, 130, 238)";

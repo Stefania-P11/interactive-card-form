@@ -210,7 +210,7 @@ main section div {
     justify-content: space-between;
 }
 
-main section span {
+main span {
 
     display:inline-block;
     
@@ -223,11 +223,15 @@ main section span + span {
 input {
     font-size:1.5rem;
     padding:2%;
+    margin: 3% 0;
 }
 
 .expiration{
 
+<<<<<<< Updated upstream
     flex-basis:25%;
+=======
+>>>>>>> Stashed changes
     text-align: center;
 
 }
@@ -259,6 +263,42 @@ footer {
     width:100%;
  
 }
+
+/* .dateFields > div + div {
+    display:flex;
+    justify-content: space-between;
+    width:50%;
+} */
+
+.dateFields {
+    width:45%;
+}
+
+.monthYearContainer {
+    display:flex;
+    
+}
+
+.monthYearContainer input {
+    width:40%;
+}
+
+#inputYear {
+    margin-left:5%;
+}
+
+.cvcField {
+    display:flex;
+    flex-direction: column;
+    width:55%;
+}
+
+.expCvcFields {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 
 /******************************************
