@@ -39,14 +39,16 @@
 
   <main>
 
-    <section>
+    <div>
       <label>Cardholder Name
         <input type="text" id="inputName" placeholder="e.g Jane Appleseed"/>
       </label>
-    </section>
-    <p class="error" id="name-error">Can't be blank</p>
-    <section>
+      <p class="error" id="name-error">Can't be blank</p>
+    </div>
+   
+    <div>
       <label>Card Number<input id="inputNumber" type="text" required placeholder="e.g 1234 5678 9123 0000"></label>
+<<<<<<< Updated upstream
     </section>
     
     <section>
@@ -63,8 +65,33 @@
       <p class="error" id="date-error">Can't be blank</p>
       <p class="error" id="cvc-error">Can't be blank</p>
     </section>
+=======
+      <p class="error" id="number-error">Can't be blank</p>
+    </div>
+    
+   
+    <div class="expCvcFields">
+      <div class="dateFields">
+        <div>
+          <label>Exp date (MM/YY)</label>
+        </div>
+>>>>>>> Stashed changes
 
-  <input class="button submitInfo" type="submit" value="Confirm">
+        <div class="monthYearContainer">
+          <input class="expiration" id="inputMonth" type="number" placeholder="MM" required>
+          <input class ="expiration" id="inputYear" type="number" placeholder="YY" required>
+        </div>
+
+        <p class="error" id="date-error">Can't be blank</p>
+      </div>
+
+      <div class="cvcField">
+        <label>CVC<input class ="cvc" id="inputCvcCode" type="number" placeholder="e.g. 123" required></label>
+        <p class="error" id="cvc-error">Can't be blank</p>
+      </div>
+    </div>
+
+    <input class="button submitInfo" type="submit" value="Confirm">
   </main>
 
   <footer>
