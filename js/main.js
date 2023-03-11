@@ -81,7 +81,7 @@ confirmButton.addEventListener("click", () => {
       fullName.style.border = "2px solid rgba(255, 0, 0, 0.3)";
     } else {
       nameError.style.display = "none";
-      cardName.style.border = "2px solid rgba(238,130,238)";
+      fullName.style.border = "2px solid rgba(238,130,238)";
     }
 
     //validates number input (limits digits to 16)
@@ -108,12 +108,12 @@ confirmButton.addEventListener("click", () => {
         yearValue.style.border = "2px solid rgba(238, 130, 238)";
     }
 
-    if (/\d{3}/gi.test(inputCvc) == false) {
+    if (/\d{3}/gi.test(inputCvc.value) == false) {
         cvcError.style.display = "block";
         inputCvc.style.border = "2px solid rgba(255, 0, 0, 0.3)";
     } else {
-        cvcError.syle.display = "none";
-        inputCvc.style.border = "2px solid rgba(238, 130, 238)";
+        cvcError.style.display = "none";
+        inputCvc.style.border = "2px solid rgba(238,130,238)";
     }
 
 })

@@ -38,39 +38,75 @@
    
 
   <main>
-
-    <div>
-      <label>Cardholder Name
-        <input type="text" id="inputName" placeholder="e.g Jane Appleseed"/>
-      </label>
-      <p class="error" id="name-error">Can't be blank</p>
-    </div>
-   
-    <div>
-      <label>Card Number<input id="inputNumber" type="text" required placeholder="e.g 1234 5678 9123 0000"></label>
-      <p class="error" id="number-error">Can't be blank</p>
-    </div>
+    <form action ="">
+      <div>
+        <label>Cardholder Name
+          <input 
+          type="text" 
+          id="inputName" 
+          placeholder="e.g Jane Appleseed"/>
+        </label>
+        <p class="error" id="name-error">Can't be blank</p>
+      </div>
     
-   
-    <div class="expCvcFields">
-      <div class="dateFields">
-        <div>
-          <label>Exp date (MM/YY)</label>
+      <div>
+        <label>Card Number
+          <input 
+          id="inputNumber" 
+          type="text" 
+          required 
+          placeholder="e.g 1234 5678 9123 0000" 
+          maxlength="16" 
+          inputmode="numeric"
+          >
+        </label>
+        <p class="error" id="number-error">Card number is not valid</p>
+      </div>
+      
+    
+      <div class="expCvcFields">
+        <div class="dateFields">
+          <div>
+            <label>Exp date (MM/YY)</label>
+          </div>
+
+          <div class="monthYearContainer">
+            <input 
+            class="expiration" 
+            id="inputMonth" 
+            type="tel" 
+            placeholder="MM" 
+            required
+            maxlength="2"
+            min="01"
+            max="12"
+            >
+            <input 
+            class ="expiration" 
+            id="inputYear" 
+            type="tel" 
+            placeholder="YY" 
+            required
+            maxlength="2"
+            >
+          </div>
+
+          <p class="error" id="date-error">Can't be blank</p>
         </div>
 
-        <div class="monthYearContainer">
-          <input class="expiration" id="inputMonth" type="number" placeholder="MM" required>
-          <input class ="expiration" id="inputYear" type="number" placeholder="YY" required>
+        <div class="cvcField">
+          <label>CVC<input 
+            class ="cvc" 
+            id="inputCvcCode" 
+            type="tel" 
+            placeholder="e.g. 123" 
+            required
+            maxlength="3">
+          </label>
+          <p class="error" id="cvc-error">Can't be blank</p>
         </div>
-
-        <p class="error" id="date-error">Can't be blank</p>
       </div>
-
-      <div class="cvcField">
-        <label>CVC<input class ="cvc" id="inputCvcCode" type="number" placeholder="e.g. 123" required></label>
-        <p class="error" id="cvc-error">Can't be blank</p>
-      </div>
-    </div>
+    </form>
 
     <input class="button submitInfo" type="submit" value="Confirm">
   </main>
