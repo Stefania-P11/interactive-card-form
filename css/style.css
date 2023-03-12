@@ -17,7 +17,7 @@
    clear: both;
 }
 
-/* Input form remove default style */
+/* Input form default style removal */
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -107,22 +107,18 @@ header * {
     
 }
 
-
 .backSide span {
 
     position:absolute;
     top: 76px;
     left:235px;
     right:50px;
-    
 
-    
 }
 
 /* CARD FRONT IMAGE */
 
 .frontSide {
-
     background-image: url("../images/bg-card-front.png");
     background-repeat: no-repeat;
     background-size:contain;
@@ -132,32 +128,24 @@ header * {
     float:right;
     top:170px;
     left:5%;
-    color:hsl(270, 3%, 87%);
-    
- 
-  
+    color:hsl(270, 3%, 87%);  
 }
 
 .cardNumber {
     top:85px;
     left:30px;
     font-size:2rem;
-    width:100%;
-    
+    width:100%;   
 }
 
-.frontSide div + span {
-
+#namePlaceholder{
     top:120px;
     left:30px;
-
 }
 
-.frontSide span + span  {
+#expPlaceholder  {
     top:120px;
-    left:230px;
- 
-    
+    left:230px;   
 }
 
 #expirationContainer {
@@ -165,7 +153,7 @@ header * {
 }
 
 
-/* CARD FRONT DETAILS */
+/* CARD FRONT DESIGN ITEMS */
 
 .filledBadge {
 
@@ -190,14 +178,10 @@ header * {
 /* *********** MAIN ************ */
 
 main {
-
     background:white;
     padding:20% 10%;
     font-size:1.2rem;
     color:hsl(278, 68%, 11%);
-    clear:both;
-   
-
 }
 
 main section {
@@ -211,13 +195,7 @@ main section div {
 }
 
 main span {
-
-    display:inline-block;
-    
-}
-
-main section span + span {
-    margin-left:40%;
+    display:inline-block; 
 }
 
 input {
@@ -226,17 +204,18 @@ input {
     margin: 3% 0;
 }
 
-.expiration{
-
+.monthYearContainer input,
+.cvc{
     text-align: center;
+}
 
+.expirationField{
+    text-align: center;
 }
 
 
 .cvc  {
-    flex-basis:45%;
-    text-align: center;
-   
+    flex-basis:45%;  
 }
 
 .dateInput, 
@@ -260,11 +239,6 @@ footer {
  
 }
 
-/* .dateFields > div + div {
-    display:flex;
-    justify-content: space-between;
-    width:50%;
-} */
 
 .dateFields {
     width:45%;
